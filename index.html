@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MISS'SHOP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="style.css">
+    
+	<script type="text/javascript" src="jquery-3.6.0.min.js"> </script>
+
+</head>
+<body>
+
+<!-- header -->
+<div class="containerpart">
+<header>
+    <div class="name">
+    	<a href="#" class="logo"><img src="images/logoo.png" alt=""> missshop</a>
+    </div>
+
+	<nav class="navbar">
+		<a class="active" href="#home">home</a>
+		<a href="#best"> best seller </a>
+		<a href="#about">about </a>
+		<a href="#shop">collection</a>
+		<a href="#review">review</a>
+		<a href="#order">order</a>
+	</nav>
+
+	<div class="icons">
+		<i class="fas fa-bars" id="menu-bars"></i>
+		<i class="fas fa-search" id="search-icon"></i>
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-shopping-cart"></a>
+	</div>
+
+	<div class="search-form">
+		<input type="search" id="search-box" placeholder="Search here...">
+		<label for="search-box" class="fas fa-search"></label>
+	</div>
+</header>
+</div>
+
+<!-- home section -->
+<div class="home-bg">
+        <section class="home" id="home">
+            
+            <div class="slide-container">
+
+                <div class="slide active">
+                    
+                    <div class="content">
+                        <h4>Trade-in-offer</h4>
+                        <h3>Super Big Deal Sale</h3>
+                        <p> Save more with coupons & up to 70% off!</p><br>
+                        <button><a href="#order">Shop Now</a></button>
+                        <button><a href="#menu">Collection</a></button>
+                        <br> <br>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                    <div class="image">
+                        <img src="images/home1.png" alt="" >    
+                    </div>
+                </div>
+
+                <div class="slide">
+            
+                    <div class="content">
+                        <h4>new collection</h4>
+                        <h3>Get up to 30% until 50% </h3>
+                        <p>Let's order now, it's shoppping time!</p><br>
+                        <button><a href="#order">Shop Now</a></button>
+                        <button><a href="#menu">Collection</a></button>
+                        <br> <br>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                    <div class="image">
+                        <img src="images/home2.png" alt="" style="padding-top: 5.5rem;">   
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+</div>
+<!-- home section ends -->
+
+
+<!--Best Seller-->
+<div class="containerpart">
+<section class="best" id="best">
+
+    <h1 class="heading"> <span> Best </span> Seller </h1>
+ 
+    <div class="swiper best-slider">
+ 
+       <div class="swiper-wrapper">
+ 
+          <div class="swiper-slide slide" data-name="best-1">
+             <img src="images/new1.png" alt="">
+             <h3>Luura Jacket Black</h3>
+             <div class="price">Rp.166.000</div>
+          </div>
+ 
+          <div class="swiper-slide slide" data-name="best-2">
+             <img src="images/new2.png" alt="">
+             <h3>Aretha Top</h3>
+             <div class="price">Rp.209.000</div>
+          </div>
+ 
+          <div class="swiper-slide slide" data-name="best-3">
+             <img src="images/new3.png" alt="">
+             <h3>Heart Straight Jeans</h3>
+             <div class="price">Rp.179.900</div>
+          </div>
+ 
+          <div class="swiper-slide slide" data-name="best-4">
+             <img src="images/new4.png" alt="">
+             <h3>Elsie Swarovki Sandals</h3>
+             <div class="price">Rp.379.000</div>
+          </div>
+ 
+          <div class="swiper-slide slide" data-name="best-5">
+             <img src="images/new5.png" alt="">
+             <h3>Binna Bags White</h3>
+             <div class="price">Rp.219.000</div>
+          </div>
+ 
+       </div>
+       <div class="swiper-pagination"></div>
+    </div>
+ </section>
+ </div>
+ 
+ <!-- best seller section ends -->
+ 
+ <!-- best seller preview section starts  -->
+ 
+ <section class="best-preview-container">
+ 
+    <div id="close-preview" class="fas fa-times"></div>
+ 
+    <div class="best-preview" data-target="best-1">
+       <img src="images/new1.png" alt="">
+       <h3>Luura Jacket Black</h3>
+       <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+     </div>
+       <p>Details :</p>
+       <p>Bust : 110cm | Length : 45cm | Matt Codoray</p>
+       <div class="price">Rp.166.000</div>
+       <a href="#order" class="btnspecial">buy now</a>
+    </div>
+ 
+    <div class="best-preview" data-target="best-2">
+       <img src="images/new2.png" alt="">
+       <h3>Aretha Top</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+       </div>
+       <p>Who says you can't fashionable and comfortable ? Try our Aretha top for both fashionable and comfort.</p> 
+        <p>Material:Silky cotton| Bust:88-99 | Fit M L</p>
+
+       <div class="price">Rp.209.000</div>
+       <a href="#order" class="btnspecial">buy now</a>
+    </div>
+ 
+    <div class="best-preview" data-target="best-3">
+       <img src="images/new3.png" alt="">
+       <h3>Heart Straight Jeans</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+       </div>
+       <p>Details :</p>
+       <p> Fit S M L XL XXL</p>
+       <p> S=26 | M=28 | L=30 | XL=32 | XXL=34</p>
+       <div class="price">Rp.179.900 </div>
+       <a href="#order" class="btnspecial">buy now</a>
+    </div>
+ 
+    <div class="best-preview" data-target="best-4">
+       <img src="images/new4.png" alt="">
+       <h3>Elsie Swarovki Sandals</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+       </div>
+       <p>Detail :</p>
+       <p>Elsie Swarovki Sandals will be your go to sandals for any occasions. Heel height 1 cm</p>
+       <div class="price">Rp.379.000</div>
+       <a href="#order" class="btnspecial">buy now</a>
+    </div>
+ 
+    <div class="best-preview" data-target="best-5">
+       <img src="images/new5.png" alt="">
+       <h3>Binna Bags White</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+       </div>
+       <p>Details :</p>
+       <p>Size : 27-15cm | Materials : Premium PU Leather</p>
+       <div class="price">Rp.219.000</div>
+       <a href="#order" class="btnspecial">buy now</a>
+    </div>
+ 
+ </section>
+ 
+ <!-- best seller preview section ends -->
+
+
+<!-- about section start -->
+<section class="about" id="about">
+    <h1 class="heading"> <span> about </span> us </h1>
+    <div class="containerabout">
+    <div class="row">
+
+        <div class="content">
+            <h3>Why Choose Us ?</h3>
+            <p> Miss'Shop is a company engaged in the business world that focuses on providing fashion for you. Missshop produces a variety of clothes, pants, shoes, and bags. We manufacture goods using the highest quality materials we can. By using high quality materials and professional staff, we guarantee that you will not disappoint.</p>
+            <p> So, don't worry about the quality, choose according to your taste and place an order immediately because the products we provide are limited and run out quickly.</p>
+            <a href="#features" class="btnspecial">learn more</a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+
+<!-- collection section start -->
+<div class="containerpart">
+    <section class="shop" id="shop" >
+    <h1 class="heading"> New <span>  Collection </span> </h1>
+    <ul class="controls">
+        <li class="buttons button-active" data-filter="all">all</li>
+        <li class="buttons" data-filter="clothes">Clothes</li>
+        <li class="buttons" data-filter="pants">Pants</li>
+        <li class="buttons" data-filter="shoes">Shoes</li>
+        <li class="buttons" data-filter="bag">Bag</li>
+    </ul>
+    <div class="image-container">
+        <!--Kategori CLOTHES-->
+        <div class="image clothes">
+            <img src="images/baju1.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Huyen Blazer </div> 
+                <p> Stock : 25 | Fit to S M L XL</p>
+                <span> Rp.110.000 <del>Rp.130.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>      
+            </div> 	
+        </div>
+        <div class="image clothes">
+            <img src="images/baju2.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Quibelle Top</div>
+                <p> Stock : 20 | Fit to S M L</p>
+                <span>Rp.105.000 <del>Rp.128.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image clothes">
+            <img src="images/baju3..jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Genesis Corduroy Crop </div> 
+                <p> Stock : 20 | Fit to L XL</p>
+                <span> Rp.299.000 <del>Rp.330.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image clothes">
+            <img src="images/baju4.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Qaima Leather Blazer</div> 
+                <p> Stock : 15 | Fit to M L XL</p>
+                <span> Rp.215.000 <del>Rp.236.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image clothes">
+            <img src="images/baju5.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Loire Knited Vest </div> 
+                <p> Stock : 23 | Fit to S M L </p>
+                <span> Rp.100.000 <del>Rp.115.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image clothes">
+            <img src="images/baju6.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Chelonia Flanel Longsleeve </div> 
+                <p> Stock : 28 | Fit to S M L</p>
+                <span> Rp.110.000 <del>Rp.134.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+        <!--Kategori PANTS-->
+        <div class="image pants">
+            <img src="images/celana1.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Loose Baggy High Waist Jeans</div> 
+                <p> Stock : 11 | Size : 26 27 28 29 30</p>
+                <span> Rp.137.000 <del>Rp.402.500</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pants">
+            <img src="images/celana2.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Alexis Cargo Pants</div> 
+                <p>  Stock : 9 | Size : 26 27 28 29 30</p>
+                <span> Rp.150.000 <del>Rp.442.500</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pants">
+            <img src="images/celana3.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Loose Baggy Unfinished Jeans</div>
+                <p>  Stock : 14 | Size : 26 27 28 29 30</p>
+                <span> Rp.150.000 <del>Rp.189.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pants">
+            <img src="images/celana4.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Maselle Cullote Pants</div>
+                <p>  Stock : 20 | All size</p>
+                <span> Rp.99.000 <del>Rp.198.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pants">
+            <img src="images/celana5.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Iveria Pants</div> 
+                <p>  Stock : 23 | All size</p>
+                <span> Rp.95.000 <del>Rp.142.500</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pants">
+            <img src="images/celana6.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Zehra Cullote Pants</div> 
+                <p>  Stock : 19 | All size</p>
+                <span> Rp.99.000 <del>Rp.148.500</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+        <!--Kategori SHOES-->
+        <div class="image shoes">
+            <img src="images/shoes1.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Shopia </div> 
+                <p> Stock : 15 | Size : 36 37 38 39 40</p>
+                <span> Rp.249.000 <del>Rp.279.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image shoes">
+            <img src="images/shoes2.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">ODI </div>
+                <p>  Stock : 18 | Size : 36 37 38 39 40</p>
+                <span> Rp.212.000<del>Rp.259.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image shoes">
+            <img src="images/shoes3.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Xavier Cream </div>
+                <p>  Stock : 20 | Size : 36 37 38 39 40</p>
+                <span>  Rp.209.000 <del>Rp.220.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image shoes">
+            <img src="images/shoes4.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Hara White </div>
+                <p>  Stock : 17 | Size : 36 37 38 39 40</p>
+                <span> Rp.194.000 <del>Rp.240.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image shoes">
+            <img src="images/shoes5.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Wilona Cream</div>
+                <p>  Stock : 21 | Size : 36 37 38 39 40</p>
+                <span> Rp.189.000 <del>Rp.210.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image shoes">
+            <img src="images/shoes6.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Vanya </div>
+                <p>  Stock : 12 | Size : 36 37 38 39 40</p>
+                <span> Rp.170.000 <del>Rp.189.000</del> </span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+        <!--Kategori BAG-->
+        <div class="image bag">
+            <img src="images/tas1.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Kim Soo Bag </div>
+                <p>  Stock : 30 | Size : 27 x 15cm</p>
+                <span>Rp.459.000 <del>Rp.530.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image bag">
+            <img src="images/tas2..jpeg" alt="">
+            <div class="p-4">
+                <div class="name">Tokyo Oval Bag </div>
+                <p<> Stock : 45 | Size : 20 x 14cm</p>
+                <span> Rp.450.000 <del>Rp.525.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image bag">
+            <img src="images/tas3.jpeg" alt="">
+            <div class="p-4">
+                <div class="name"> Bajo Padded Bag </div>
+                <p> Stock : 20 | Size : 28 x 18cm</p>
+                <span> Rp.479.000 <del>Rp.504.000</del></span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </section>
+</div>
+<!-- collection section ends -->
+
+
+<!-- features section start -->
+<div class="containerpart">
+	<h1 class="heading"> Our <span> Features </span></h1>
+    <section  id="features" class="section-p1">
+        <div class="fe-box">
+            <img src="images/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f4.png" alt="">
+            <h6>Big Diskon</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f6.png" alt="">
+            <h6>24/7 Service</h6>
+        </div>
+   
+</section>
+</div>
+<!-- features section ends -->
+
+
+<!-- review section start -->
+<section id="review">
+        <h1 class="heading">our customers <span>reviews</span></h1>
+        <div class=" wrapper testimonial-section">
+          <div class="container">
+           <div class="row justify-content-center">
+             <div class="col-sm-12 col-lg-10">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <img src="images/vanessa.jpeg" alt="" class="img-fluid">
+                      <p>Never regret buying clothes here, the product quality is very good, original, and very fast delivery!!</p>
+                      <h5>Vanessa Novalia</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">       
+                    <div class="carousel-caption">
+                      <img src="images/carol.jpeg" alt="" class="img-fluid">
+                      <p>Always subscribe to missshop, orders that come are always as expected. Success always missshop👍</p>
+                      <h5>Carolina O.A</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/christi.jpeg" alt="" class="img-fluid">
+                      <p>Missshop is the best, the quality is very good, and the items are cool.</p>
+                      <h5>Christivany V</h5>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+             </div>
+    
+           </div> 
+          </div>
+        </div>
+</section>
+<!-- review section ends -->
+
+
+
+<!-- order section start -->
+<div class="containerpart">
+<section class="order" id="order">
+    <h1 class="heading"> <span>Order</span> NOW </h1>
+    <form action="" name="fform">
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your email</span>
+                <input type="text" placeholder="enter your email">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <select name="inama">
+                    <option value="Luura Jacket Black">Luura Jacket Black</option>
+                    <option value="Aretha Toph">Aretha Top</option>
+                    <option value="Heart Straight Jeans">Heart Straight Jeans</option>
+                    <option value="Elsie Swarovki Sandals">Elsie Swarovki Sandals</option>
+                    <option value="Binna Bags White">Binna Bags White</option>
+
+                    <option value="Huyen Blazer">Huyen Blazer </option>
+                    <option value="Quibelle Top">Quibelle Top</option>
+                    <option value="Genesis Corduroy Crop">Genesis Corduroy Crop </option>
+                    <option value="Qaima Leather Blazer">Qaima Leather Blazer</option>
+                    <option value="Loire Knited Vest ">Loire Knited Vest </option>
+                    <option value="Chelonia Flanel Longsleeve">Chelonia Flanel Longsleeve</option>
+                   
+                    <option value="Loose Baggy High Waist Jeans">Loose Baggy High Waist Jeans</option>
+                    <option value="Alexis Cargo Pants">Alexis Cargo Pants</option>
+                    <option value="Loose Baggy Unfinished Jeans">Loose Baggy Unfinished Jeans</option>
+                    <option value="Maselle Cullote Pantsr">Maselle Cullote Pants</option>
+                    <option value="Iveria Pants">Iveria Pants</option>
+                    <option value="Zehra Cullote Pants">Zehra Cullote Pants</option>
+
+                    <option value="Shopia ">Shopia  </option>
+                    <option value="ODI">ODI </option>
+                    <option value="Xavier Cream ">Xavier Cream </option>
+                    <option value="Hara White">Hara White</option>
+                    <option value="Wilona Cream">Wilona Cream </option>
+                    <option value="Vanya">Vanya </option>
+
+                    <option value="Kim Soo Bag">Kim Soo Bag</option>
+                    <option value="Tokyo Oval Bag">Tokyo Oval Bag </option>
+                    <option value="Bajo Padded Bag">Bajo Padded Bag </option>
+                  </select>
+            </div>
+            <div class="input">
+                <span>how musch</span>
+                <input type="number" name="ijumlah" placeholder="how many orders">
+            </div>
+        </div>
+        <div class="inputBox">
+             <div class="input">
+                <span>payment method</span>
+                <input type="text" placeholder="pay now or cash on delivery">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Price</span>
+                <input type="text" placeholder="price" name="oharga"/>
+            </div>
+            <div class="input">
+                <span>Total</span>
+                <input type="text" placeholder="total" name="ototal"/> 
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        
+        <div class="inputBox">
+            <div class="input">
+                <input type="button" value="Process" onclick="hitungtotal()" class="btn" style="background-color:#ffbe76"/>
+            </div>
+            <div class="input">
+                <input type="button" value="Order" onclick="" id="btn" class="btn" style="background-color:#ffbe76"/>
+             </div>
+        </div>
+    </form>
+</section>
+</div>
+<!-- order section ends -->
+
+
+<!-- footer section start -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #45526e">
+      <div class="container p-4 pb-0">
+        <section class="">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h3 class="text-uppercase mb-4 font-weight-bold" style="font-weight:900;">
+                Miss'shop
+              </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3154788033976!2d106.77604031476984!3d-6.353189495402535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eee4c1621393%3A0x4c359cbc672594d4!2sJl.%20Kerinci%2C%20Limo%2C%20Kec.%20Limo%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016515!5e0!3m2!1sid!2sid!4v1650950052498!5m2!1sid!2sid" width="80%" height="70%" style="border:0;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h3 class="text-uppercase mb-4 font-weight-bold" style="font-weight:900;">Products</h3>
+              <p><a class="text-white"><i class="fas fa-arrow-right"></i>  Clothes</a></p>
+              <p><a class="text-white"><i class="fas fa-arrow-right"></i>  Pants</a></p>
+              <p><a class="text-white"><i class="fas fa-arrow-right"></i>  Shoes</a></p>
+              <p><a class="text-white"><i class="fas fa-arrow-right"></i>  Bag</a></p>
+            </div>
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h3 class="text-uppercase mb-4 font-weight-bold" style="font-weight:900;">Useful links</h3>
+              <p><a href="#best" class="text-white"><i class="fas fa-arrow-right"></i>  Best Seller</a></p>
+              <p><a href="#best" class="text-white"><i class="fas fa-arrow-right"></i>  New Collection</a></p>
+              <p><a href="#best" class="text-white"><i class="fas fa-arrow-right"></i>  Review</a></p>
+              <p><a href="#best" class="text-white"><i class="fas fa-arrow-right"></i>  Shop Now</a></p>
+            </div>
+  
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h3 class="text-uppercase mb-4 font-weight-bold" style="font-weight:900;">Contact</h3>
+              <p ><i class="fas fa-home mr-3"></i> Jakarta, 10110, Indonesia</p>
+              <p style="text-transform:none;"><i class="fas fa-envelope mr-3"></i> missshop.info@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +628 3476 78890</p>  
+            </div>
+          </div>
+        </section>
+  
+        <hr class="my-3">
+
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3"> © 2022 Copyright: <a class="text-white"> 09031182126008 Vanessa Novalia SIREG 2B</a></div>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a class="btns btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+              <a class="btns btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+              <a class="btns btn-outline-light btn-floating m-1" class="text-white" role="button" ><i class="fab fa-google"></i></a>
+              <a class="btns btn-outline-light btn-floating m-1" class="text-white" role="button" ><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </section> 
+
+      </div>   
+    </footer>
+<!-- footer section ends -->
+    
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
